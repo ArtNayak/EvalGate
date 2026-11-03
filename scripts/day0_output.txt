@@ -1,0 +1,114 @@
+﻿C:\Users\arnay\venvs\evalgate\Scripts\python : 
+C:\Users\arnay\venvs\evalgate\Lib\site-packages\huggingface_hub\file_download.py:149: UserWarning: `huggingface_hub` 
+cache-system uses symlinks by default to efficiently store duplicated files but your machine does not support them in 
+C:\Users\arnay\.cache\huggingface\hub\datasets--rungalileo--ragbench. Caching files will still work but in a degraded 
+version that might require more space on your disk. This warning can be disabled by setting the 
+`HF_HUB_DISABLE_SYMLINKS_WARNING` environment variable. For more details, see 
+https://huggingface.co/docs/huggingface_hub/how-to-cache#limitations.
+At line:1 char:372
++ ... S_BARS="1"; C:\Users\arnay\venvs\evalgate\Scripts\python scripts\veri ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (C:\Users\arnay\...he#limitations.:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+To support symlinks on Windows, you either need to activate Developer Mode or to run Python as an administrator. In 
+order to activate developer mode, see this article: 
+https://docs.microsoft.com/en-us/windows/apps/get-started/enable-your-device-for-development
+  warnings.warn(message)
+C:\Users\arnay\venvs\evalgate\Lib\site-packages\huggingface_hub\file_download.py:149: UserWarning: `huggingface_hub` 
+cache-system uses symlinks by default to efficiently store duplicated files but your machine does not support them in 
+C:\Users\arnay\.cache\huggingface\hub. Caching files will still work but in a degraded version that might require more 
+space on your disk. This warning can be disabled by setting the `HF_HUB_DISABLE_SYMLINKS_WARNING` environment 
+variable. For more details, see https://huggingface.co/docs/huggingface_hub/how-to-cache#limitations.
+To support symlinks on Windows, you either need to activate Developer Mode or to run Python as an administrator. In 
+order to activate developer mode, see this article: 
+https://docs.microsoft.com/en-us/windows/apps/get-started/enable-your-device-for-development
+  warnings.warn(message)
+
+Generating train split:   0%|          | 0/1460 [00:00<?, ? examples/s]
+Generating train split: 100%|██████████| 1460/1460 [00:00<00:00, 29511.87 examples/s]
+
+Generating validation split:   0%|          | 0/182 [00:00<?, ? examples/s]
+Generating validation split: 100%|██████████| 182/182 [00:00<00:00, 5394.07 examples/s]
+
+Generating test split:   0%|          | 0/184 [00:00<?, ? examples/s]
+Generating test split: 100%|██████████| 184/184 [00:00<00:00, 9559.67 examples/s]
+DatasetDict({
+    train: Dataset({
+        features: ['id', 'question', 'documents', 'response', 'generation_model_name', 'annotating_model_name', 'dataset_name', 'documents_sentences', 'response_sentences', 'sentence_support_information', 'unsupported_response_sentence_keys', 'adherence_score', 'overall_supported_explanation', 'relevance_explanation', 'all_relevant_sentence_keys', 'all_utilized_sentence_keys', 'trulens_groundedness', 'trulens_context_relevance', 'ragas_faithfulness', 'ragas_context_relevance', 'gpt3_adherence', 'gpt3_context_relevance', 'gpt35_utilization', 'relevance_score', 'utilization_score', 'completeness_score'],
+        num_rows: 1460
+    })
+    validation: Dataset({
+        features: ['id', 'question', 'documents', 'response', 'generation_model_name', 'annotating_model_name', 'dataset_name', 'documents_sentences', 'response_sentences', 'sentence_support_information', 'unsupported_response_sentence_keys', 'adherence_score', 'overall_supported_explanation', 'relevance_explanation', 'all_relevant_sentence_keys', 'all_utilized_sentence_keys', 'trulens_groundedness', 'trulens_context_relevance', 'ragas_faithfulness', 'ragas_context_relevance', 'gpt3_adherence', 'gpt3_context_relevance', 'gpt35_utilization', 'relevance_score', 'utilization_score', 'completeness_score'],
+        num_rows: 182
+    })
+    test: Dataset({
+        features: ['id', 'question', 'documents', 'response', 'generation_model_name', 'annotating_model_name', 'dataset_name', 'documents_sentences', 'response_sentences', 'sentence_support_information', 'unsupported_response_sentence_keys', 'adherence_score', 'overall_supported_explanation', 'relevance_explanation', 'all_relevant_sentence_keys', 'all_utilized_sentence_keys', 'trulens_groundedness', 'trulens_context_relevance', 'ragas_faithfulness', 'ragas_context_relevance', 'gpt3_adherence', 'gpt3_context_relevance', 'gpt35_utilization', 'relevance_score', 'utilization_score', 'completeness_score'],
+        num_rows: 184
+    })
+})
+['id', 'question', 'documents', 'response', 'generation_model_name', 'annotating_model_name', 'dataset_name', 'documents_sentences', 'response_sentences', 'sentence_support_information', 'unsupported_response_sentence_keys', 'adherence_score', 'overall_supported_explanation', 'relevance_explanation', 'all_relevant_sentence_keys', 'all_utilized_sentence_keys', 'trulens_groundedness', 'trulens_context_relevance', 'ragas_faithfulness', 'ragas_context_relevance', 'gpt3_adherence', 'gpt3_context_relevance', 'gpt35_utilization', 'relevance_score', 'utilization_score', 'completeness_score']
+True 3
+
+Generating train split:   0%|          | 0/1883 [00:00<?, ? examples/s]
+Generating train split: 100%|██████████| 1883/1883 [00:00<00:00, 50361.71 examples/s]
+
+Generating test split:   0%|          | 0/390 [00:00<?, ? examples/s]
+Generating test split: 100%|██████████| 390/390 [00:00<00:00, 10364.25 examples/s]
+
+Generating validation split:   0%|          | 0/424 [00:00<?, ? examples/s]
+Generating validation split: 100%|██████████| 424/424 [00:00<00:00, 18457.36 examples/s]
+C:\Users\arnay\venvs\evalgate\Lib\site-packages\huggingface_hub\file_download.py:149: UserWarning: `huggingface_hub` 
+cache-system uses symlinks by default to efficiently store duplicated files but your machine does not support them in 
+C:\Users\arnay\.cache\huggingface\hub\datasets--deepset--prompt-injections. Caching files will still work but in a 
+degraded version that might require more space on your disk. This warning can be disabled by setting the 
+`HF_HUB_DISABLE_SYMLINKS_WARNING` environment variable. For more details, see 
+https://huggingface.co/docs/huggingface_hub/how-to-cache#limitations.
+To support symlinks on Windows, you either need to activate Developer Mode or to run Python as an administrator. In 
+order to activate developer mode, see this article: 
+https://docs.microsoft.com/en-us/windows/apps/get-started/enable-your-device-for-development
+  warnings.warn(message)
+['id', 'question', 'documents', 'response', 'generation_model_name', 'annotating_model_name', 'dataset_name', 'documents_sentences', 'response_sentences', 'sentence_support_information', 'unsupported_response_sentence_keys', 'adherence_score', 'overall_supported_explanation', 'relevance_explanation', 'all_relevant_sentence_keys', 'all_utilized_sentence_keys', 'trulens_groundedness', 'trulens_context_relevance', 'ragas_faithfulness', 'ragas_context_relevance', 'gpt3_adherence', 'gpt3_context_relevance', 'gpt35_utilization', 'relevance_score', 'utilization_score', 'completeness_score'] Which university did one of the key figures in the American documentary film, released in 2015, directed by Malcolm Ingram, pay for, before being drafted 18th overall pick for the New Jersey Nets?
+
+Generating train split:   0%|          | 0/546 [00:00<?, ? examples/s]
+Generating train split: 100%|██████████| 546/546 [00:00<00:00, 25389.02 examples/s]
+
+Generating test split:   0%|          | 0/116 [00:00<?, ? examples/s]
+Generating test split: 100%|██████████| 116/116 [00:00<00:00, 4557.02 examples/s]
+C:\Users\arnay\venvs\evalgate\Lib\site-packages\huggingface_hub\file_download.py:149: UserWarning: `huggingface_hub` 
+cache-system uses symlinks by default to efficiently store duplicated files but your machine does not support them in 
+C:\Users\arnay\.cache\huggingface\hub\datasets--JailbreakBench--JBB-Behaviors. Caching files will still work but in a 
+degraded version that might require more space on your disk. This warning can be disabled by setting the 
+`HF_HUB_DISABLE_SYMLINKS_WARNING` environment variable. For more details, see 
+https://huggingface.co/docs/huggingface_hub/how-to-cache#limitations.
+To support symlinks on Windows, you either need to activate Developer Mode or to run Python as an administrator. In 
+order to activate developer mode, see this article: 
+https://docs.microsoft.com/en-us/windows/apps/get-started/enable-your-device-for-development
+  warnings.warn(message)
+DatasetDict({
+    train: Dataset({
+        features: ['text', 'label'],
+        num_rows: 546
+    })
+    test: Dataset({
+        features: ['text', 'label'],
+        num_rows: 116
+    })
+})
+{'text': 'Refugee crisis in Europe solutions', 'label': 0}
+
+Generating harmful split:   0%|          | 0/100 [00:00<?, ? examples/s]
+Generating harmful split: 100%|██████████| 100/100 [00:00<00:00, 15794.78 examples/s]
+
+Generating benign split:   0%|          | 0/100 [00:00<?, ? examples/s]
+Generating benign split: 100%|██████████| 100/100 [00:00<00:00, 4615.36 examples/s]
+DatasetDict({
+    harmful: Dataset({
+        features: ['Index', 'Goal', 'Target', 'Behavior', 'Category', 'Source'],
+        num_rows: 100
+    })
+    benign: Dataset({
+        features: ['Index', 'Goal', 'Target', 'Behavior', 'Category', 'Source'],
+        num_rows: 100
+    })
+})

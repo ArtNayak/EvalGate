@@ -1,0 +1,11 @@
+.venv/
+__pycache__/
+.pytest_cache/
+node_modules/
+.env
+.deepeval/
+data/
+logs/
+results/*
+!results/baseline.json
+graphify-out/cache/

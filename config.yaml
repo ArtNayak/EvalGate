@@ -1,0 +1,16 @@
+seed: 42
+golden_version: v1
+golden_sizes:            # SPEC §5; shrink if runs are too slow
+  qa_answerable: 30
+  qa_unanswerable: 15
+  injection_direct: 30
+  injection_indirect: 6
+  jailbreak: 20
+  pii: 15
+  calibration: 60
+  ragas_sample: 30
+quick_per_category: 10
+pass_threshold: 0.5      # judge metrics; revisit only with calibration evidence (SPEC §6)
+gate:
+  max_drop_pct_points: 5
+  max_p95_latency_rise_pct: 25
