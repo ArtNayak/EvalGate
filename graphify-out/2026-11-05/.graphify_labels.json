@@ -1,0 +1,19 @@
+{
+  "0": "EvalGate — build plan & progress",
+  "1": "EvalGate: Project Document Set (Feasibility, PRD, Design, Test Plan, Build Plan)",
+  "2": "main.py",
+  "3": "test_app.py",
+  "4": "tools.py",
+  "5": "EvalGate — rules for Claude",
+  "6": "5. Data specification",
+  "7": "6. Evaluation and test plan",
+  "8": "7. Safety and guardrails test spec",
+  "9": "1. Project summary and scope decisions",
+  "10": "8. Build plan",
+  "11": "llm.py",
+  "12": "DECISIONS.md",
+  "13": "build_corpus.py",
+  "14": "make_db.py",
+  "15": "__init__.py",
+  "16": "verify_sources.py"
+}

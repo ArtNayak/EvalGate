@@ -9,3 +9,4 @@ logs/
 results/*
 !results/baseline.json
 graphify-out/cache/
+docs/

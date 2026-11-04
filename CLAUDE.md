@@ -30,6 +30,7 @@ Before any work: read `docs/PLAN.md` to find the current milestone, then read on
 5. **Verify** — run the check (unit test, `--quick` run, or the milestone's "Done when"). Not done until it runs. Report failures with real output.
 6. **Record** — tick the box in `docs/PLAN.md`; append to `docs/DECISIONS.md` if anything deviated, was tuned, or a fallback was used.
 7. **Milestone end** — run the milestone's Definition of Done (SPEC §8), then **never run `git commit`/`git add` yourself** — the user commits. Give them the exact command and message (`M<n>: <summary>`, listing any results files to include).
+8. **Learning gate** — after the commit, explain the milestone step by step (pseudo code + what each file contains), answer the user's questions, then quiz them. **Do not start the next milestone until the user passes the quiz.**
 
 ## File rules
 
