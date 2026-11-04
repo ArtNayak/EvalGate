@@ -3,13 +3,13 @@
 Mirrors SPEC §8. Tasks come from SPEC only; do not add new ones. Tick boxes as work lands.
 Estimates total ~8 days; days 9–10 are slip buffer, not new scope.
 
-**Current milestone: M0**
+**Current milestone: M1** (M0 committed and quiz passed; waiting for "start M1")
 
 **Cut line (if time runs out):** M0–M3 + M5 is the minimum credible version → then M4 → then M6 → M7.
 
 | Milestone | Est. | Target day | Status |
 | --- | --- | --- | --- |
-| M0 Day-0 setup | 0.5 | 1 | ☐ |
+| M0 Day-0 setup | 0.5 | 1 | ✅ |
 | M1 Assistant | 1.5 | 1–2 | ☐ |
 | M2 Golden set + DeepEval baseline | 1.5 | 3–4 | ☐ |
 | M3 Judge calibration, Ragas, hallucination rate | 1 | 4–5 | ☐ |
@@ -24,7 +24,7 @@ Estimates total ~8 days; days 9–10 are slip buffer, not new scope.
 - [x] Check RAM → pick judge model (<8 GB: `qwen2.5:3b` for both; ≥8 GB: consider 7B judge). Log choice in DECISIONS
 - [x] Install `make` on Windows (e.g. `winget install ezwinports.make`) and confirm `make --version`
 - [x] `ollama pull qwen2.5:3b` and `llama3.2:3b`; `ollama run qwen2.5:3b` replies
-- [x] Python venv (`.venv`); install Day-0 package list
+- [x] Python venv (at `C:\Users\arnay\venvs\evalgate`, outside OneDrive); install Day-0 package list
 - [x] `npx promptfoo --version` works
 - [x] `scripts/verify_sources.py` runs; output saved to `scripts/day0_output.txt`; schemas match SPEC §5 (R4 → log differences)
 - [x] `pip freeze > requirements.txt` (replaces the unpinned name list with exact versions; NFR-2)
